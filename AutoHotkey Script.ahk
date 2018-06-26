@@ -5,7 +5,7 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 ;****** Windows-C : CMD (Command / DOS) ******
 #c::
-If WinExist("CMD") or WinExist("Select CMD")
+If WinExist("CMD") or WinExist("Select CMD")  or WinExist("Command Prompt")  
 	WinActivate
 else
 	Run C:\Users\cb18\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\System Tools\Command Prompt.lnk
